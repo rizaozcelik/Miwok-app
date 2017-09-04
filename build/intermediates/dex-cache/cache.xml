@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\4f0b87254147b55ae07ed82361a5f5f1e3018181\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_2fa12b8bc3943de46d778c30fdc76abebc6d60a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_89bdc21d1bf852320a9ba87b7a83f274d9406d49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\9baa7ee54ea4152e2b0d93438f0fb143132272a3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_5708162133b6e14c6d5c3cdd916bc954d92ac8ee.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_383a4149859002afede658dd23908208b80e2943\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\712a479b6e86a54033ca7169e9481c4d1494e1b8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_205306175c42167ad58d5414cac35dc994d271c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\bb6b835d3176cc92305e15aff66fd034ee18fc6c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_23c4cbffbccfbced07ac0baecab33a7d7006f263.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="048475d0e23590abcd512113bb4fe0cda036a221">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7eaf010162153830a5e6d4603c68a5ca43862814\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\9f371510f7b60a3b442bea7f294c18f2283c1749\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_03de51e3bf8fb258605f8f697eada8ab23fb29f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\9f371510f7b60a3b442bea7f294c18f2283c1749\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_097eff23a72d33f113ee0905ef752b84c51650c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_ca9c0f13f561614b98f0f00c9d0a975dd7e04d0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\964290202aa85015fd14c5d6f4e4930ddc375ace\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_6dba0b3cac921dd3640a0c1b171338aa92333391.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rizao\.android\build-cache\c91dc810f307f1c35989e193b50cc5160b1df5bc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\rizao\Desktop\CMPE\Miwok\ud839_Miwok-Starter-code\app\build\intermediates\pre-dexed\debug\classes_8913d514993ed67bf10b6c04f6a9cf814ca8d3a1.jar" />
+    </item>
+
+</items>
