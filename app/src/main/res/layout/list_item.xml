@@ -45,12 +45,12 @@
             tools:text="one" />
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="24dp"
-        android:layout_height="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:paddingRight="16dp"
         android:background="@color/category_numbers"
-        android:id="@+id/playButton"
+        android:id="@+id/playButtonImage"
         android:src="@drawable/ic_play_arrow" />
 </LinearLayout>

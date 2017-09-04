@@ -3,10 +3,6 @@ package com.example.android.miwok;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by rizao on 8/31/2017.
- */
-
 public class Word implements Parcelable {
     private String mDefaultTranslation;
     private String mMiwokTranslation;

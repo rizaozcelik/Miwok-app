@@ -1,8 +1,6 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
-import android.content.Context;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -11,51 +9,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by rizao on 8/31/2017.
- */
 
 public class WordAdapter extends ArrayAdapter {
 
-    private int colorID;
     private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
             releaseMediaPlayer();
         }
     };
-
-    private AudioManager.OnAudioFocusChangeListener mAfChangeListener = new AudioManager.OnAudioFocusChangeListener() {
-        @Override
-        public void onAudioFocusChange(int focusChange) {
-            if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT || focusChange ==
-                    AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
-                mp.pause();
-                mp.seekTo(0);
-            } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-                releaseMediaPlayer();
-                am.abandonAudioFocus(mAfChangeListener);
-            } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
-                mp.start();
-            }
-        }
-    };
-
+    private int colorID;
     private static MediaPlayer mp = null;
-    private Context mContext;
-    private AudioManager am;
 
     public WordAdapter(Activity context, ArrayList<Word> words, int color) {
         super(context, 0, words);
         this.colorID = color;
-        this.mContext = context;
-        am = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
     }
 
     @NonNull
@@ -87,22 +60,28 @@ public class WordAdapter extends ArrayAdapter {
         int color = ContextCompat.getColor(getContext(), colorID);
         frame.setBackgroundColor(color);
 
-        final ImageButton playButton = (ImageButton) listItemView.findViewById(R.id.playButton);
+        final ImageView playButton = (ImageView) listItemView.findViewById(R.id.playButtonImage);
         playButton.setBackgroundColor(color);
+
         final int resourceID = currentWord.getMediaResourceID();
-        playButton.setOnClickListener(new View.OnClickListener() {
+        listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int result = am.requestAudioFocus(mAfChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
-                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-
-                    releaseMediaPlayer();
-                    mp = MediaPlayer.create(playButton.getContext(), resourceID);
-                    mp.start();
-                    mp.setOnCompletionListener(mOnCompletionListener);
-                }
+                releaseMediaPlayer();
+                mp = MediaPlayer.create(playButton.getContext(), resourceID);
+                mp.start();
+                mp.setOnCompletionListener(mOnCompletionListener);
             }
         });
+//        playButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                releaseMediaPlayer();
+//                mp = MediaPlayer.create(playButton.getContext(), resourceID);
+//                mp.start();
+//                mp.setOnCompletionListener(mOnCompletionListener);
+//            }
+//        });
 
         return listItemView;
     }
