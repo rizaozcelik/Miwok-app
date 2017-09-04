@@ -1,10 +1,13 @@
 package com.example.android.miwok;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by rizao on 8/31/2017.
  */
 
-public class Word {
+public class Word implements Parcelable {
     private String mDefaultTranslation;
     private String mMiwokTranslation;
     private int mImageResourceID;
@@ -44,4 +47,40 @@ public class Word {
     public int getMediaResourceID() {
         return mMediaResourceID;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.mDefaultTranslation);
+        parcel.writeString(this.mMiwokTranslation);
+        parcel.writeInt(this.mImageResourceID);
+        if (parcel.dataSize() == 4) {
+            parcel.writeInt(this.mMediaResourceID);
+        }
+
+    }
+
+    public Word(Parcel in) {
+        this.mDefaultTranslation = in.readString();
+        this.mMiwokTranslation = in.readString();
+        this.mImageResourceID = in.readInt();
+        if (in.dataSize() == 4) {
+            this.hasImage = true;
+            this.mMediaResourceID = in.readInt();
+        }
+    }
+
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public Word createFromParcel(Parcel in) {
+            return new Word(in);
+        }
+
+        public Word[] newArray(int size) {
+            return new Word[size];
+        }
+    };
 }

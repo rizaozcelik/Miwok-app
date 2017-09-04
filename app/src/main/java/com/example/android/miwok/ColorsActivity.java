@@ -10,7 +10,7 @@ public class ColorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new ColorsFragment())
+                .replace(R.id.container, new CategoriesFragment())
                 .commit();
     }
 }

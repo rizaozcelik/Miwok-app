@@ -10,7 +10,7 @@ public class PhrasesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new PhrasesFragment())
+                .replace(R.id.container, new CategoriesFragment())
                 .commit();
     }
 }
