@@ -3,7 +3,6 @@ package com.example.android.miwok;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
@@ -11,9 +10,9 @@ import java.util.ArrayList;
  * Created by rizao on 9/3/2017.
  */
 
-public class FragmentPageAdapter extends FragmentPagerAdapter {
+public class MyFragmentPagerAdapter extends android.support.v4.app.FragmentPagerAdapter {
 
-    public FragmentPageAdapter(FragmentManager fm) {
+    public MyFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

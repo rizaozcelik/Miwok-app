@@ -48,22 +48,6 @@ public class Word implements Parcelable {
         return mMediaResourceID;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.mDefaultTranslation);
-        parcel.writeString(this.mMiwokTranslation);
-        parcel.writeInt(this.mImageResourceID);
-        if (parcel.dataSize() == 4) {
-            parcel.writeInt(this.mMediaResourceID);
-        }
-
-    }
-
     public Word(Parcel in) {
         this.mDefaultTranslation = in.readString();
         this.mMiwokTranslation = in.readString();
@@ -83,4 +67,20 @@ public class Word implements Parcelable {
             return new Word[size];
         }
     };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.mDefaultTranslation);
+        parcel.writeString(this.mMiwokTranslation);
+        parcel.writeInt(this.mImageResourceID);
+        if (parcel.dataSize() == 4) {
+            parcel.writeInt(this.mMediaResourceID);
+        }
+
+    }
 }

@@ -31,39 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        FragmentPageAdapter adapter = new FragmentPageAdapter(getSupportFragmentManager());
+        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
+//  Example of listener and activity.
 //        TextView numbers = (TextView)findViewById(R.id.numbers);
 //        numbers.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
 //                startActivity(new Intent(MainActivity.this, NumbersActivity.class));
-//            }
-//        });
-//
-//        TextView colors = (TextView)findViewById(R.id.colors);
-//        colors.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, ColorsActivity.class));
-//            }
-//        });
-//
-//        TextView family = (TextView)findViewById(R.id.family);
-//        family.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, FamilyActivity.class));
-//            }
-//        });
-//
-//        TextView phrases = (TextView)findViewById(R.id.phrases);
-//        phrases.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, PhrasesActivity.class));
 //            }
 //        });
 
